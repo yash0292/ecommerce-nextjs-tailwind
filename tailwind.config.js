@@ -6,24 +6,13 @@ module.exports = {
 	],
 	theme: {
 		screens: {
-			'xs': '480px',
-			// => @media (min-width: 640px) { ... }
-	  
-			'sm': '570px',
-			// => @media (min-width: 768px) { ... }
-	  
-			'md': '768px',
-			// => @media (min-width: 1024px) { ... }
-	  
-			'lg': '1024px',
-			// => @media (min-width: 1280px) { ... }
-	  
-			'xl': '1200px',
-			// => @media (min-width: 1536px) { ... }
-
-			'2xl': '1400px',
-			// => @media (min-width: 1536px) { ... }
-		  },
+			xs: "480px",
+			sm: "570px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1200px",
+			"2xl": "1400px",
+		},
 		extend: {
 			fontFamily: {
 				poppins: ["Poppins", "sans-serif"],
@@ -83,12 +72,30 @@ module.exports = {
 			},
 			transitionTimingFunction: {
 				ease: "ease",
-				"out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
 			},
 			boxShadow: {
-				'3xl': '0 5px 20px hsla(0, 0%, 0%, 0.15)',
-				'bottomMenu' : '0 0 10px hsla(0, 0%, 0%, 0.25)',
-			  }
+				"3xl": "0 5px 20px hsla(0, 0%, 0%, 0.15)",
+				bottomMenu: "0 0 10px hsla(0, 0%, 0%, 0.25)",
+			},
+			fontSize: {
+				"1": "1.563rem",
+				"2": "1.375rem",
+				"3": "1.25rem",
+				"4": "1.125rem",
+				"5": "1rem",
+				"6": "0.938rem",
+				"7": "0.875rem",
+				"8": "0.813rem",
+				"9": "0.75rem",
+				"10": "0.688rem",
+				"11": "0.625rem",
+				"1-sm":"1.875rem",
+				"1-md":"2.375rem",
+				"1-lg":"2.625rem",
+				"7-lg":"1.625rem",
+				"5-lg":"0.941rem",
+				
+			},
 		},
 	},
 	plugins: [],

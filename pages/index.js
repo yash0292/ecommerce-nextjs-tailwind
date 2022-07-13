@@ -3,6 +3,7 @@ import DeskNavbar from '../components/navigation/DeskNavbar'
 import NotificationToasts from '../components/navigation/NotificationToasts'
 import SubscribeModal from '../components/modal/SubscribeModal'
 import Banner from '../components/banner/Banner'
+import Products from '../components/products/Products'
 
 export default function Home() {
   return (
@@ -13,10 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="overlay"></div>
-      <SubscribeModal />
-      <NotificationToasts />
+      {/* <SubscribeModal /> */}
+      {/* <NotificationToasts /> */}
       <DeskNavbar />
-      <Banner />
+      <main>
+        <Banner />
+        <Products />
+      </main>
     </div>
   )
 }
